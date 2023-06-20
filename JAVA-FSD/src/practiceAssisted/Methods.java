@@ -1,16 +1,20 @@
 package practiceAssisted;
 
 public class Methods {
-
-	public static void main(String[] args) {
+	int z=50;
+	public static void main(String[] args)
+	{
 		//assigning result to Ans
-		int Ans = multiply(5,6);
-		System.out.println("Multiplictaion of two numbers is : "+Ans);
-			
+		Methods M = new Methods();
+		System.out.println("Cube of a number is : "+M.z);
+		//call by Value
+		CallByValue(5);
+		System.out.println("Cube of a number is : "+M.z);
 	}
-	// this the method that is called from main method
-	public static int multiply(int x,int y) {
-		int z = x*y;
+	//method
+	static int CallByValue(int z) {
+		// method variables are limited to method only.
+		z = z^3;
 		return z;
 		
 	}
