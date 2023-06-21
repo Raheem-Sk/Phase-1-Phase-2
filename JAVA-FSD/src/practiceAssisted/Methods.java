@@ -1,21 +1,31 @@
 package practiceAssisted;
 
 public class Methods {
-	int z=50;
 	public static void main(String[] args)
 	{
-		//assigning result to Ans
-		Methods M = new Methods();
-		System.out.println("Cube of a number is : "+M.z);
-		//call by Value
-		CallByValue(5);
-		System.out.println("Cube of a number is : "+M.z);
+		//in this method overloading same method takes 2 or 3 arguments
+		Add(10,11);
+		Add(10,11,12);
+		
+		mux(10,11);
+		mux(10,11,12);
+
 	}
-	//method
-	static int CallByValue(int z) {
-		// method variables are limited to method only.
-		z = z^3;
-		return z;
+	//method 1
+	public static void Add(int x,int y) {
+		System.out.println("Add of the two numbers is : "+(x+y));
+		
+	}
+	public static void Add(int x,int y,int z) {
+		System.out.println("Add of the three numbers is : "+(x+y+z));
+		
+	}
+	public static void mux(int x,int y,int z) {
+		System.out.println("Multiplication of the three numbers is : "+(x*y*z));
+		
+	}
+	public static void mux(int x,int y) {
+		System.out.println("Multiplication of the three numbers is : "+(x*y));
 		
 	}
 
