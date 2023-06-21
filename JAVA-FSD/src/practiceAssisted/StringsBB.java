@@ -11,21 +11,24 @@ public class StringsBB {
 
 				//substring
 				String sub=new String("Welcome");
-				System.out.println(sub.substring(2));
+				System.out.println(sub.substring(3));
 
 				//String Comparison
 				String s1="Hello";
-				String s2="Heldo";
+				String s2="HeLLo";
 				System.out.println(s1.compareTo(s2));
+				System.out.println(s1.compareToIgnoreCase(s2));
+
 
 				//IsEmpty
 				String s4="";
 				System.out.println(s4.isEmpty());
-
-				//toLowerCase
+				
+				//toUpperCase
 				String s5 = "Hello";
 				System.out.println(s5.toUpperCase());
-				
+				System.out.println(s5.toLowerCase());
+
 				//replace
 				String s6 = "Heldo";
 				String replace=s6.replace('d', 'l');
@@ -35,18 +38,20 @@ public class StringsBB {
 				String x="Welcome to Java";
 				String y="WeLcOmE tO JaVa";
 				System.out.println(x.equalsIgnoreCase(y));
-		 
+				System.out.println(x.equals(y));
+
 				System.out.println("\n");
 				System.out.println("Creating StringBuffer");
 				//Creating StringBuffer and append method
-				StringBuffer s=new StringBuffer("Welcome to Java!");
+				StringBuffer s=new StringBuffer("Welcome to Java..!");
 				s.append("Enjoy your learning");
+				System.out.println(s.capacity());
 				System.out.println(s);
 
 				//insert method
 				s.insert(0, 'w');
 				System.out.println(s);
-
+				s.deleteCharAt(0);
 				//replace method
 				StringBuffer sb=new StringBuffer("Hello");
 				sb.replace(0, 2, "hEl");
@@ -60,15 +65,15 @@ public class StringsBB {
 				System.out.println("\n");
 				System.out.println("Creating StringBuilder");
 				StringBuilder sb1=new StringBuilder("Happy");
-				sb1.append("Learning");
+				sb1.append(" Learning");
 				System.out.println(sb1);
 
 				System.out.println(sb1.delete(0, 1));
 
-				System.out.println(sb1.insert(1, "Welcome"));
+				System.out.println(sb1.insert(10, " Welcome "));
 
 				System.out.println(sb1.reverse());
-						
+				
 				//conversion	
 				System.out.println("\n");
 				System.out.println("Conversion of Strings to StringBuffer and StringBuilder");
@@ -80,7 +85,7 @@ public class StringsBB {
 		        sbr.reverse(); 
 		        System.out.println("String to StringBuffer");
 		        System.out.println(sbr); 
-		          
+		        
 		        // conversion from String object to StringBuilder 
 		        StringBuilder sbl = new StringBuilder(str); 
 		        sbl.append("world"); 
