@@ -34,7 +34,6 @@ public class Threads implements Runnable,Second{
 		//th3.start();
 		th1.mimple();
 		
-
 	}
 
 	@Override
