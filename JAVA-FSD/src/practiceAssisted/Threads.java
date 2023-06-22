@@ -2,12 +2,15 @@ package practiceAssisted;
 
 
 //// creating a thread using inheritance / extending
+interface Second{
+		void mimple();
+}
 
-public class Threads extends Thread{
+public class Threads implements Runnable,Second{
 	
 	public void run() {
 		
-		System.out.print(getName()+" got executed\n");
+		System.out.print("I got executed\n");
 		
 		
 	}
@@ -15,8 +18,9 @@ public class Threads extends Thread{
 	public static void main(String[] args) {
 		
 		Threads th1 = new Threads();
-		Threads th2 = new Threads();
-		Threads th3 = new Threads();
+		Thread th11 = new Thread(th1);
+		//Threads th2 = new Threads();
+		//Threads th3 = new Threads();
 
 		//System.out.println(th1.getState());
 		//th1.setPriority(6);
@@ -25,11 +29,17 @@ public class Threads extends Thread{
 		//System.out.println(th2.getName());
 		//th3.setPriority(10);
 		//System.out.println(th3.getName());
-		th1.start();
-		th2.start();
-		th3.start();
+		th11.start();
+		//th2.start();
+		//th3.start();
+		th1.mimple();
+		
 
+	}
 
+	@Override
+	public void mimple() {
+		System.out.println("i extecuted just now");
 	}
 
 }
