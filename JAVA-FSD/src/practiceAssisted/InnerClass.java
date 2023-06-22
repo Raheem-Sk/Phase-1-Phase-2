@@ -13,9 +13,9 @@ public class InnerClass {
 	  Inner l=new Inner();  
 	  l.msg();  
 	 }  
-
+}
 	 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		innerClass2  ob=new innerClass2 ();  
 		ob.display();  
 		}

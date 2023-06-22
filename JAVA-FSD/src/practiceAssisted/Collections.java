@@ -9,7 +9,8 @@ public class Collections {
 				System.out.println("ArrayList");
 				ArrayList<String> city=new ArrayList<String>();   
 			      city.add("Bangalore");//
-			      city.add("Delhi");    	   
+			      city.add("Delhi");    
+			      city.trimToSize();
 			      System.out.println(city);  
 				
 				//creating vector
@@ -43,11 +44,11 @@ public class Collections {
 			       //creating linked hashset
 			       System.out.println("\n");
 			       System.out.println("LinkedHashSet");
-			       LinkedHashSet<Integer> set2=new LinkedHashSet<Integer>();  
-			       set2.add(11);  
-			       set2.add(13);  
-			       set2.add(12);
-			       set2.add(14);	       
+			       LinkedHashSet<Boolean> set2=new LinkedHashSet<Boolean>();  
+			       set2.add(true);  
+			       set2.add(true);  
+			       set2.add(true);
+			       set2.add(false);	    
 			       System.out.println(set2);
 			      	} 
 			      }  

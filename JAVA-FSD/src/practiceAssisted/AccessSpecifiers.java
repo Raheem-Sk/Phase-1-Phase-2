@@ -40,14 +40,14 @@ class B{
 		}	
 }
 
-class C{
+/*class C{
 	//Private access specifier method but beyond this class it is not accessible
 		private void PrivateAccess()
 		{
 			System.out.println("This is method has Private class ");
 		}
 		
-}
+}*/
 
 class D{
 	//this class can be accessed only by its sub-class as we extended it.
