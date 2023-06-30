@@ -12,6 +12,7 @@ public class SmallestElement {
 		Scanner sc = new Scanner(System.in);
 		int k = sc.nextInt();
 		System.out.println(A[k-1]);
+		sc.close();
 	}	
 	
 

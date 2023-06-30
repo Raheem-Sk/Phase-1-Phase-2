@@ -27,9 +27,12 @@ public class FileHandling {
 		
 	//read
 		FileReader fr = new FileReader(file);
-		while(fr.read()!=-1)
+		while(fr.read()!=-1) {
 			System.out.println((char)fr.read());
 		
+		}
+		
+		fr.close();
 	}
 	
 	
